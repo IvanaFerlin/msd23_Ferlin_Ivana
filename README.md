@@ -41,6 +41,12 @@ Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
 - *Unterstützung: Wenn du Fragen hast oder Unterstützung beim Verständnis des Codes benötigst, stehe ich gerne zur Verfügung, um zu helfen und weitere Informationen bereitzustellen.*
 - *Feedback: Ich bin immer offen für Feedback und Vorschläge zur Verbesserung.*
 
+## Autorinnen Informationen
+
+[Meine Profilseite](https://github.com/IvanaFerlin/msd23_Ferlin_Ivana.git)  Link zur GitHub Profilseite
+
+[FH Joanneum](https://www.fh-joanneum.at) Link zur Hochschule
+
 # Übungen
 
 - [Exercise1](exercise1.md) Erstes README verfassen
