@@ -49,5 +49,5 @@ Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
 
 # Übungen
 
-- [Exercise1](exercise1.md) Erstes README verfassen
-- [Exercise2](exercise2.md) Erste GIT Befehle anwenden
+- [Exercise 1](exercise1.md) Erstes README verfassen
+- [Exercise 2](exercise2.md) Erste GIT Befehle anwenden
