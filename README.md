@@ -51,3 +51,5 @@ Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
 
 - [Exercise 1](exercise1.md) Erstes README verfassen
 - [Exercise 2](exercise2.md) Erste GIT Befehle anwenden
+- [Exercise 3](exercise3.md) Maven (Java) Projektstruktur und Git
+- [Exercise 4](exercise4.md) Source Code Testen
