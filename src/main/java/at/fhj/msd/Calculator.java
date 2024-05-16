@@ -18,7 +18,15 @@ public class Calculator {
 
     // Methode zur Berechnung der Fakultät
     public int factorial(int n) {
-        return 0;
+
+        if (n == 0 || n == 1) {
+            return 1;
+        } else if (n < 0) {
+            return 0;
+        } else {
+            return n * factorial(n - 1);
+        }
+
     }
 
 
