@@ -11,3 +11,14 @@ assertEquals(54.6, calculator.multiply(10.5,5.2));
 
 ### Testcoverage
 ![screenshot](resources\images\ex4_1.png)
+
+## Methode zur Berechnung der Fakultät
+
+- ohne korrekte Implementierung der Fakultät Methode
+
+![screenshot](resources\images\ex4_2.png)
+
+- Fakultät Implementation
+
+## mvn test
+![screenshot](resources\images\ex4_3.png)
