@@ -9,11 +9,16 @@ public class Main {
         double value1;
         double value2;
 
+        int valueFac;
+
         System.out.println("Ivana Ferlin");
 
 
         value1 = readInputNr("Number 1: ", scanner);
         value2 = readInputNr("Number 2: ", scanner);
+
+        System.out.print("Number for factorial: ");
+        valueFac = scanner.nextInt();
 
         Calculator calculator = new Calculator();
 
@@ -21,6 +26,11 @@ public class Main {
         System.out.println(calculator.minus(value1, value2));
         System.out.println(calculator.divide(value1, value2));
         System.out.println(calculator.multiply(value1, value2));
+
+        System.out.print("factorial of " + valueFac + " = ");
+        System.out.println(calculator.factorial(valueFac));
+
+
 
     }
 

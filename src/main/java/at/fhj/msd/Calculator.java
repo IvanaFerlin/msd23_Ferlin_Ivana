@@ -14,4 +14,15 @@ public class Calculator {
     public double multiply(double number1, double number2){
         return number1 * number2;
     }
+
+
+    // Methode zur Berechnung der Fakultät
+    public int factorial(int n) {
+        return 0;
+    }
+
+
+
+
+
 }
