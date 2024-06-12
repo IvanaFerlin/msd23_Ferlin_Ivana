@@ -1,7 +1,15 @@
 package at.fhj.msd;
 import java.util.Scanner;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 public class Main {
+
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -10,6 +18,8 @@ public class Main {
         double value2;
 
         int valueFac;
+
+
 
         System.out.println("Ivana Ferlin");
 
@@ -30,9 +40,15 @@ public class Main {
         System.out.print("factorial of " + valueFac + " = ");
         System.out.println(calculator.factorial(valueFac));
 
+        logger.info("We've just calculating");
+        logger.error("error");
+        logger.debug("debug");
+
+
 
 
     }
+
 
 
     public static double readInputNr(String prompt, Scanner scanner) {
@@ -44,10 +60,14 @@ public class Main {
             try {
 
                 double input = Double.parseDouble(scanner.nextLine());
+                return input;
 
+                /*
                 if (input > 0) {
                     return input;
                 }
+
+                 */
 
             } catch (NumberFormatException e) {
                 System.out.println("Please enter a non-negative valid double!");
@@ -55,5 +75,7 @@ public class Main {
         }
 
     }
+
+
 
 }

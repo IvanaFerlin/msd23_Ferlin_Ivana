@@ -1,40 +1,47 @@
 
-# Euromillionen
+# Calculator Projekt
 
-**Dieses Programm generiert eine Anzahl von Tipps für die Euromillionen. Es verwendet die aktuelle Systemzeit in Millisekunden und berechnet die Summe der Ziffern um die Anzahl der Tipps zu bestimmen. Für jeden Tipp generiert es 5 zufällige Zahlen von 1 bis 50 und 2 Sternzahlen von 1 bis 12. Jeder Tipp wird in aufsteigender Reihenfolge sortiert. Schließlich werden die Tipps auf eine bestimmtern Art ausgegeben.**
+**Dieses Projekt implementiert einen einfachen Taschenrechner mit grundlegenden Rechenoperationen und Logging mittels Log4J. Das Projekt enthält auch Unit-Tests für alle Methoden des Taschenrechners.**
 
 ## Installation
 
-> Klone das Repository oder lade die Datei Euromillionen.java herunter.     
-> Öffne ein Terminal oder eine Befehlszeile und navigiere zum Verzeichnis, in dem sich die Euromillionen.java-Datei befindet.   
-> Kompiliere die Java-Datei mit dem Befehl: javac Euromillionen.java   
-> Führe das kompilierte Programm aus mit dem Befehl: java Euromillionen
+- Klone das Repository
+- Öffne ein Terminal oder eine Befehlszeile und navigiere zum Verzeichnis, in dem sich die .java-Datei befindet
+- Importiere das Projekt in Ihre bevorzugte IDE
+- Stelle sicher, dass du Maven zur Verwaltung der Abhängigkeiten verwendest
 
 ## Verwendung
 
-Aktuelle Zeit in Millisekunden
 ````
-long currentMs = System.currentTimeMillis();
+add(double number1, double number2)
 ````
-Methode um die Anzahl der Tipss zu bekommen
 ````
-private static int getCount(long currentMs) {
+minus(double number1, double number2)
 ````
-Methode um die Tipps zu erstellen
 ````
-private static ArrayList<String> getTips(int count) {
+divide(double number1, double number2)
 ````
-Ausgabe: zum Beispiel:
 ````
-Tipp 1: # [16, 18, 22, 28, 50] * [1, 9]
+multiply(double number1, double number2)
+````
+````
+factorial(int n)
+````
 
-Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
-````
+## Logging-Konfiguration
+
+Das Projekt verwendet Log4J für das Logging. Die Konfiguration wird in einer Datei namens log4j2.xml gespeichert.
+[Logging-Konfiguration](log4j2.xml.template)
+
+
+## Unit-Tests
+
+Die Unit-Tests für die Calculator-Klasse sind in der Datei CalculatorTest.java enthalten. Die Tests überprüfen die Funktionalität jeder Methode und stellen sicher, dass eine Division durch Null korrekt behandelt wird.
 
 ### Möglichkeiten der Mitarbeit
 
-- Fehlerberichte: Wenn du Fehler im Code findest oder unerwartetes Verhalten bemerkst, erstelle einen Fehlerbericht, damit ich das Problem beheben kann.
-- Verbesserungsvorschläge: Wenn du Ideen hast, wie das Programm verbessert werden kann, teile sie gerne mit. Ich bin offen für Vorschläge zur Erweiterung oder Optimierung der Funktionalität.
+- *Fehlerberichte: Wenn du Fehler im Code findest oder unerwartetes Verhalten bemerkst, erstelle einen Fehlerbericht, damit ich das Problem beheben kann.*
+- *Verbesserungsvorschläge: Wenn du Ideen hast, wie das Programm verbessert werden kann, teile sie gerne mit. Ich bin offen für Vorschläge zur Erweiterung oder Optimierung der Funktionalität.*
 
 ## Hinweise
 
@@ -43,9 +50,9 @@ Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
 
 ## Autorinnen Informationen
 
-[Meine Profilseite](https://github.com/IvanaFerlin/msd23_Ferlin_Ivana.git)  Link zur GitHub Profilseite
+>[Meine Profilseite](https://github.com/IvanaFerlin/msd23_Ferlin_Ivana.git)  Link zur GitHub Profilseite
 
-[FH Joanneum](https://www.fh-joanneum.at) Link zur Hochschule
+>[FH Joanneum](https://www.fh-joanneum.at) Link zur Hochschule
 
 # Übungen
 
@@ -53,3 +60,5 @@ Tipp 2: # [8, 22, 26, 45, 47] * [2, 11]
 - [Exercise 2](exercise2.md) Erste GIT Befehle anwenden
 - [Exercise 3](exercise3.md) Maven (Java) Projektstruktur und Git
 - [Exercise 4](exercise4.md) Source Code Testen
+- [Exercise 5](exercise5.md) GIT Branching
+[Logging-Konfiguration](log4j2.xml.template)

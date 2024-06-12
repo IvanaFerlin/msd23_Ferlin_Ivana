@@ -51,5 +51,13 @@ public class CalculatorTest {
     }
 
 
+    @DisplayName("Testing divide 0 method")
+    @Test
+    void testDivideByZero() {
+        assertThrows(ArithmeticException.class, () -> {
+            calculator.divide(5, 0);
+        });
+    }
+
 
 }
