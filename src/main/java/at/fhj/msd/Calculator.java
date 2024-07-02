@@ -3,17 +3,21 @@ package at.fhj.msd;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+/**
+ * A simple calculator class that provides methods to perform basic arithmetic operations.
+ */
 public class Calculator {
-
-    //private static final Logger LOGGER = Logger.getLogger(Calculator.class.getName());
 
     private static final Logger LOGGER = LogManager.getLogger(Calculator.class);
 
 
-
-
-
+    /**
+     * Adds two numbers.
+     *
+     * @param number1 The first number to add.
+     * @param number2 The second number to add.
+     * @return The sum of number1 and number2.
+     */
     public double add(double number1, double number2){
         LOGGER.debug("Called add with parameters: {}, {}", number1, number2);
         //LOGGER.log(Level.FINE, "Called add with parameters: {0}, {1}", new Object[]{number1, number2});
@@ -25,6 +29,13 @@ public class Calculator {
     }
 
 
+    /**
+     * Subtracts the second number from the first number.
+     *
+     * @param number1 The number to subtract from.
+     * @param number2 The number to subtract.
+     * @return The difference between number1 and number2.
+     */
     public double minus(double number1, double number2){
         LOGGER.debug("Called minus with parameters: {}, {}", number1, number2);
         double result = number1 - number2;
@@ -33,6 +44,14 @@ public class Calculator {
     }
 
 
+    /**
+     * Divides the first number by the second number.
+     *
+     * @param number1 The number to be divided.
+     * @param number2 The number to divide by.
+     * @return The quotient of number1 divided by number2.
+     * @throws ArithmeticException if number2 is zero.
+     */
     public double divide(double number1, double number2){
         LOGGER.debug("Called divide with parameters: {}, {}", number1, number2);
         if (number2 == 0) {
@@ -45,6 +64,13 @@ public class Calculator {
     }
 
 
+    /**
+     * Multiplies two numbers.
+     *
+     * @param number1 The first number to multiply.
+     * @param number2 The second number to multiply.
+     * @return The product of number1 and number2.
+     */
     public double multiply(double number1, double number2){
         LOGGER.debug("Called multiply with parameters: {}, {}", number1, number2);
         double result = number1 * number2;
@@ -53,7 +79,12 @@ public class Calculator {
     }
 
 
-    // Methode zur Berechnung der Fakultät
+    /**
+     * Calculates the factorial of a non-negative integer.
+     *
+     * @param n The non-negative integer.
+     * @return The factorial of n, or 1 if n is 0 or 1, or 0 if n is negative.
+     */
     public int factorial(int n) {
 
         LOGGER.debug("Called factorial with parameter: {}", n);
@@ -68,9 +99,6 @@ public class Calculator {
         }
 
     }
-
-
-
 
 
 }
