@@ -1,0 +1,23 @@
+<project name="Documentation">
+
+
+
+    <publishDate position="right"/>
+    <version position="left"/>
+
+    <body>
+        <menu name="Overview">
+            <item name="Überblick" href="index.html"/>
+            <item name="Good Style" href="good_style.html"/>
+            <item name="Projektberichte" href="project-reports.html"/>
+            <item name="Javadoc" href="apidocs/index.html"/>
+            <item name="JaCoCo" href="jacoco/index.html"/>
+        </menu>
+        <menu ref="reports"/>
+    </body>
+
+</project>
+
+
+
+

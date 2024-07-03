@@ -62,3 +62,4 @@ Die Unit-Tests für die Calculator-Klasse sind in der Datei CalculatorTest.java 
 - [Exercise 4](exercise4.md) Source Code Testen
 - [Exercise 5](exercise5.md) GIT Branching
 [Logging-Konfiguration](log4j2.xml.template)
+- [Exercise 6](exercise6.md) Documentation
